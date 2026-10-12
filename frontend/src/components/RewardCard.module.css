@@ -1,0 +1,129 @@
+.card {
+  background: var(--vl-card-bg);
+  border: 1px solid var(--vl-card-border);
+  border-radius: var(--vl-radius-md);
+  padding: 16px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 6px;
+  position: relative;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card.locked {
+  opacity: 0.55;
+}
+
+.today {
+  border-color: var(--vl-gold);
+  box-shadow: 0 0 0 1px var(--vl-gold), 0 0 20px rgba(251, 191, 36, 0.25);
+}
+
+.claimed {
+  border-color: var(--vl-green);
+  opacity: 0.85;
+}
+
+.ultimate {
+  border-color: var(--vl-gold);
+  background: linear-gradient(180deg, rgba(251, 191, 36, 0.08), var(--vl-card-bg));
+}
+
+.topRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.dayLabel {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--vl-text-secondary);
+}
+
+.badgeToday {
+  font-size: 10px;
+  font-weight: 700;
+  color: #1a1330;
+  background: var(--vl-gold);
+  padding: 2px 8px;
+  border-radius: 20px;
+}
+
+.badgeVip {
+  font-size: 10px;
+  font-weight: 700;
+  color: #1a1330;
+  background: var(--vl-gold-light);
+  padding: 2px 8px;
+  border-radius: 20px;
+}
+
+.title {
+  font-size: 12px;
+  color: var(--vl-text-secondary);
+  margin-top: 4px;
+}
+
+.amount {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--vl-gold);
+}
+
+.ultimate .amount {
+  font-size: 26px;
+}
+
+.subtitle {
+  font-size: 11px;
+  color: var(--vl-text-muted);
+  margin-bottom: 4px;
+}
+
+.claimedPill,
+.lockedPill {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 10px;
+  border-radius: 20px;
+  width: 100%;
+  justify-content: center;
+}
+
+.claimedPill {
+  color: var(--vl-green);
+  background: var(--vl-green-bg);
+}
+
+.lockedPill {
+  color: var(--vl-text-muted);
+  background: var(--vl-locked-bg);
+}
+
+.claimBtn {
+  width: 100%;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 12px;
+  font-weight: 700;
+  font-size: 13px;
+  background: linear-gradient(90deg, var(--vl-gold), var(--vl-gold-light));
+  color: #1a1330;
+  cursor: pointer;
+}
+
+.claimBtn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.claimBtn:hover:not(:disabled) {
+  filter: brightness(1.05);
+}

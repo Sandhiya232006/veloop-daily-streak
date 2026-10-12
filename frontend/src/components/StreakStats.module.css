@@ -1,0 +1,63 @@
+.wrap {
+  padding: 0 20px;
+  margin-bottom: 16px;
+}
+
+.streakBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(249, 115, 22, 0.12);
+  color: #fb923c;
+  font-weight: 700;
+  font-size: 13px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+}
+
+.flameIcon {
+  color: #f97316;
+}
+
+.statsRow {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.statCard {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--vl-card-bg);
+  border: 1px solid var(--vl-card-border);
+  border-radius: var(--vl-radius-md);
+  padding: 10px 12px;
+}
+
+.iconPurple {
+  color: var(--vl-purple-light);
+}
+.iconGreen {
+  color: var(--vl-green);
+}
+.iconGold {
+  color: var(--vl-gold);
+}
+
+.statLabel {
+  font-size: 10px;
+  color: var(--vl-text-secondary);
+}
+
+.statValue {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.statValueGold {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--vl-gold);
+}

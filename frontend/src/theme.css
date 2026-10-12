@@ -1,0 +1,51 @@
+:root {
+  --vl-bg: #0d0817;
+  --vl-bg-elevated: #150f26;
+  --vl-card-bg: #1a1330;
+  --vl-card-border: #2e2350;
+  --vl-purple: #7c3aed;
+  --vl-purple-light: #a78bfa;
+  --vl-purple-glow: rgba(124, 58, 237, 0.35);
+  --vl-gold: #fbbf24;
+  --vl-gold-light: #fde68a;
+  --vl-green: #22c55e;
+  --vl-green-bg: rgba(34, 197, 94, 0.12);
+  --vl-text-primary: #f5f3ff;
+  --vl-text-secondary: #a3a0b8;
+  --vl-text-muted: #6b6785;
+  --vl-locked-bg: #1e1836;
+  --vl-radius-lg: 18px;
+  --vl-radius-md: 12px;
+  --vl-radius-sm: 8px;
+  --vl-shadow-glow: 0 0 24px var(--vl-purple-glow);
+  --vl-font: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--vl-bg);
+  color: var(--vl-text-primary);
+  font-family: var(--vl-font);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--vl-card-border);
+  border-radius: 8px;
+}

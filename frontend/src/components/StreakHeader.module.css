@@ -1,0 +1,50 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+}
+
+.backBtn {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: none;
+  background: var(--vl-bg-elevated);
+  color: var(--vl-text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.titleWrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.flame {
+  color: #f97316;
+}
+
+.gemBadge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--vl-bg-elevated);
+  border: 1px solid var(--vl-card-border);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.gemIcon {
+  color: var(--vl-purple-light);
+}

@@ -1,0 +1,29 @@
+.wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 20px 30px;
+  padding: 14px 16px;
+  background: var(--vl-card-bg);
+  border: 1px solid var(--vl-card-border);
+  border-radius: var(--vl-radius-md);
+}
+
+.icon {
+  color: var(--vl-gold);
+  flex-shrink: 0;
+}
+
+.text {
+  font-size: 12px;
+  color: var(--vl-text-secondary);
+  flex: 1;
+}
+
+.text b {
+  color: var(--vl-gold);
+}
+
+.chevron {
+  color: var(--vl-text-muted);
+}

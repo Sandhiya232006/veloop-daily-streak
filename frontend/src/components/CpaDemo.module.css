@@ -1,0 +1,68 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(5, 3, 12, 0.75);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.card {
+  background: var(--vl-card-bg);
+  border: 1px solid var(--vl-card-border);
+  border-radius: var(--vl-radius-lg);
+  padding: 32px 28px;
+  width: 100%;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  box-shadow: var(--vl-shadow-glow);
+}
+
+.spinner {
+  width: 44px;
+  height: 44px;
+  border: 3px solid var(--vl-card-border);
+  border-top-color: var(--vl-purple-light);
+  border-radius: 50%;
+  animation: spin 0.9s linear infinite;
+}
+
+.shield {
+  color: var(--vl-green);
+  margin-top: -8px;
+}
+
+.text {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--vl-text-secondary);
+  text-align: center;
+  margin: 0;
+  min-height: 20px;
+}
+
+.progressTrack {
+  width: 100%;
+  height: 6px;
+  background: var(--vl-locked-bg);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--vl-purple), var(--vl-purple-light));
+  transition: width 0.3s ease;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
